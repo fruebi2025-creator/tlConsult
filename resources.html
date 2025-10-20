@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - TLC Consult</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TLC Consult</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services-qa.html">Quality Control & Assurance</a></li>
+                        <li><a href="services-training.html">Training & Education</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="industries.html" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link active">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.php" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Resources & Knowledge Center</h1>
+                <p>Access our comprehensive library of quality management resources, guides, and industry insights</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Resources</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="resources-search">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search resources..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="resource-filters">
+                    <button class="filter-btn active" data-filter="all">All Resources</button>
+                    <button class="filter-btn" data-filter="articles">Articles</button>
+                    <button class="filter-btn" data-filter="whitepapers">Whitepapers</button>
+                    <button class="filter-btn" data-filter="guides">Guides</button>
+                    <button class="filter-btn" data-filter="templates">Templates</button>
+                    <button class="filter-btn" data-filter="webinars">Webinars</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="featured-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Resources</h2>
+                <p>Our most popular and valuable quality management resources</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=ISO+9001+Guide" alt="ISO 9001 Implementation Guide">
+                        <div class="resource-type">Guide</div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Complete ISO 9001:2015 Implementation Guide</h3>
+                        <p>Step-by-step guide to implementing ISO 9001:2015 quality management systems in your organization.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 10, 2024</span>
+                            <span><i class="fas fa-download"></i> 1.2K downloads</span>
+                            <span><i class="fas fa-clock"></i> 15 min read</span>
+                        </div>
+                        <a href="#" class="resource-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Audit+Checklist" alt="Internal Audit Checklist">
+                        <div class="resource-type">Template</div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Internal Audit Checklist Template</h3>
+                        <p>Comprehensive checklist template for conducting effective internal quality audits.</p>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 8, 2024</span>
+                            <span><i class="fas fa-download"></i> 856 downloads</span>
+                            <span><i class="fas fa-file"></i> PDF Template</span>
+                        </div>
+                        <a href="#" class="resource-link">Download <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="resources-grid-section">
+        <div class="container">
+            <div class="resources-grid">
+                <!-- Articles -->
+                <div class="resource-card" data-category="articles">
+                    <div class="resource-header">
+                        <div class="resource-type-badge article">Article</div>
+                        <div class="resource-date">Dec 12, 2024</div>
+                    </div>
+                    <h3>5 Key Benefits of Digital Quality Management Systems</h3>
+                    <p>Explore how digital transformation is revolutionizing quality management and the key benefits organizations are experiencing.</p>
+                    <div class="resource-meta">
+                        <span class="read-time"><i class="fas fa-clock"></i> 8 min read</span>
+                        <span class="author">By Sarah Johnson</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Digital Transformation</span>
+                        <span class="tag">QMS</span>
+                    </div>
+                    <a href="#" class="resource-btn">Read Article</a>
+                </div>
+
+                <div class="resource-card" data-category="whitepapers">
+                    <div class="resource-header">
+                        <div class="resource-type-badge whitepaper">Whitepaper</div>
+                        <div class="resource-date">Dec 10, 2024</div>
+                    </div>
+                    <h3>Risk-Based Thinking in ISO 9001:2015</h3>
+                    <p>Comprehensive analysis of implementing risk-based thinking in quality management systems for better organizational resilience.</p>
+                    <div class="resource-meta">
+                        <span class="read-time"><i class="fas fa-file-pdf"></i> 24 pages</span>
+                        <span class="downloads"><i class="fas fa-download"></i> 432 downloads</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Risk Management</span>
+                        <span class="tag">ISO 9001</span>
+                    </div>
+                    <a href="#" class="resource-btn">Download PDF</a>
+                </div>
+
+                <div class="resource-card" data-category="guides">
+                    <div class="resource-header">
+                        <div class="resource-type-badge guide">Guide</div>
+                        <div class="resource-date">Dec 8, 2024</div>
+                    </div>
+                    <h3>HACCP Implementation for Food Manufacturers</h3>
+                    <p>Step-by-step guide for implementing Hazard Analysis and Critical Control Points in food manufacturing operations.</p>
+                    <div class="resource-meta">
+                        <span class="read-time"><i class="fas fa-clock"></i> 20 min read</span>
+                        <span class="downloads"><i class="fas fa-download"></i> 267 downloads</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Food Safety</span>
+                        <span class="tag">HACCP</span>
+                    </div>
+                    <a href="#" class="resource-btn">View Guide</a>
+                </div>
+
+                <div class="resource-card" data-category="templates">
+                    <div class="resource-header">
+                        <div class="resource-type-badge template">Template</div>
+                        <div class="resource-date">Dec 6, 2024</div>
+                    </div>
+                    <h3>Corrective Action Request (CAR) Template</h3>
+                    <p>Professional template for documenting and tracking corrective actions in your quality management system.</p>
+                    <div class="resource-meta">
+                        <span class="file-type"><i class="fas fa-file-excel"></i> Excel Template</span>
+                        <span class="downloads"><i class="fas fa-download"></i> 1.1K downloads</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Templates</span>
+                        <span class="tag">CAPA</span>
+                    </div>
+                    <a href="#" class="resource-btn">Download Template</a>
+                </div>
+
+                <div class="resource-card" data-category="webinars">
+                    <div class="resource-header">
+                        <div class="resource-type-badge webinar">Webinar</div>
+                        <div class="resource-date">Dec 4, 2024</div>
+                    </div>
+                    <h3>Best Practices in Supplier Quality Management</h3>
+                    <p>Join our expert panel discussion on effective strategies for managing supplier quality and building strong partnerships.</p>
+                    <div class="resource-meta">
+                        <span class="duration"><i class="fas fa-play"></i> 45 minutes</span>
+                        <span class="viewers"><i class="fas fa-eye"></i> 856 views</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Supplier Management</span>
+                        <span class="tag">Webinar</span>
+                    </div>
+                    <a href="#" class="resource-btn">Watch Webinar</a>
+                </div>
+
+                <div class="resource-card" data-category="articles">
+                    <div class="resource-header">
+                        <div class="resource-type-badge article">Article</div>
+                        <div class="resource-date">Dec 2, 2024</div>
+                    </div>
+                    <h3>Quality Metrics That Matter: KPIs for QMS Success</h3>
+                    <p>Learn about the most important quality metrics and KPIs that drive continuous improvement in quality management systems.</p>
+                    <div class="resource-meta">
+                        <span class="read-time"><i class="fas fa-clock"></i> 12 min read</span>
+                        <span class="author">By Michael Chen</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">KPIs</span>
+                        <span class="tag">Metrics</span>
+                    </div>
+                    <a href="#" class="resource-btn">Read Article</a>
+                </div>
+
+                <div class="resource-card" data-category="guides">
+                    <div class="resource-header">
+                        <div class="resource-type-badge guide">Guide</div>
+                        <div class="resource-date">Nov 30, 2024</div>
+                    </div>
+                    <h3>Lean Manufacturing Principles and Implementation</h3>
+                    <p>Complete guide to understanding and implementing lean manufacturing principles to eliminate waste and improve efficiency.</p>
+                    <div class="resource-meta">
+                        <span class="read-time"><i class="fas fa-clock"></i> 25 min read</span>
+                        <span class="downloads"><i class="fas fa-download"></i> 394 downloads</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Lean Manufacturing</span>
+                        <span class="tag">Process Improvement</span>
+                    </div>
+                    <a href="#" class="resource-btn">View Guide</a>
+                </div>
+
+                <div class="resource-card" data-category="whitepapers">
+                    <div class="resource-header">
+                        <div class="resource-type-badge whitepaper">Whitepaper</div>
+                        <div class="resource-date">Nov 28, 2024</div>
+                    </div>
+                    <h3>Industry 4.0 and Quality Management Evolution</h3>
+                    <p>Exploring how Industry 4.0 technologies are transforming quality management practices and creating new opportunities.</p>
+                    <div class="resource-meta">
+                        <span class="read-time"><i class="fas fa-file-pdf"></i> 18 pages</span>
+                        <span class="downloads"><i class="fas fa-download"></i> 278 downloads</span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="tag">Industry 4.0</span>
+                        <span class="tag">Technology</span>
+                    </div>
+                    <a href="#" class="resource-btn">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Quality Insights</h2>
+                <p>Subscribe to our newsletter and receive the latest quality management resources, industry trends, and expert insights directly in your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <div class="newsletter-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Weekly quality insights</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Exclusive resources</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Industry updates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+                <p>Find resources organized by topic and industry focus</p>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Quality Management Systems</h3>
+                    <p>ISO standards, implementation guides, and best practices</p>
+                    <span class="resource-count">24 Resources</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Auditing & Compliance</h3>
+                    <p>Internal audits, compliance checklists, and audit management</p>
+                    <span class="resource-count">18 Resources</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Process Improvement</h3>
+                    <p>Lean, Six Sigma, and continuous improvement methodologies</p>
+                    <span class="resource-count">16 Resources</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training & Development</h3>
+                    <p>Training materials, competency frameworks, and skill development</p>
+                    <span class="resource-count">12 Resources</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TLC Consult</h4>
+                    <p>Excellence in Quality Control, Assurance & Training. Empowering organizations with comprehensive quality solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-qa.html">Quality Control</a></li>
+                        <li><a href="services-qa.html">Quality Assurance</a></li>
+                        <li><a href="services-training.html">Training Programs</a></li>
+                        <li><a href="services-training.html">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@tlc-consult.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 TLC Consult. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

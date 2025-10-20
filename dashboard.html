@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TLC Consult</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TLC Consult</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services-qa.html">Quality Control & Assurance</a></li>
+                        <li><a href="services-training.html">Training & Education</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="industries.html" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link user-menu">
+                        <i class="fas fa-user-circle"></i>
+                        John Doe
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h3>Dashboard</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#overview" class="sidebar-link active" data-section="overview">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Overview
+                    </a></li>
+                    <li><a href="#courses" class="sidebar-link" data-section="courses">
+                        <i class="fas fa-book"></i>
+                        My Courses
+                    </a></li>
+                    <li><a href="#certifications" class="sidebar-link" data-section="certifications">
+                        <i class="fas fa-certificate"></i>
+                        Certifications
+                    </a></li>
+                    <li><a href="#assessments" class="sidebar-link" data-section="assessments">
+                        <i class="fas fa-clipboard-check"></i>
+                        Assessments
+                    </a></li>
+                    <li><a href="#profile" class="sidebar-link" data-section="profile">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a></li>
+                    <li><a href="#settings" class="sidebar-link" data-section="settings">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Overview Section -->
+            <section id="overview" class="dashboard-section active">
+                <div class="dashboard-header">
+                    <h1>Welcome back, John!</h1>
+                    <p>Here's your learning progress and activity summary</p>
+                </div>
+
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>4</h3>
+                            <p>Active Courses</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>2</h3>
+                            <p>Certificates Earned</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>47</h3>
+                            <p>Hours Completed</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>85%</h3>
+                            <p>Average Score</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Continue Learning</h3>
+                        </div>
+                        <div class="course-progress">
+                            <div class="course-item">
+                                <div class="course-info">
+                                    <h4>ISO 9001:2015 Quality Management</h4>
+                                    <p>Module 3: Process Approach</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-info">
+                                    <h4>Internal Auditing Fundamentals</h4>
+                                    <p>Module 2: Audit Planning</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                                <span class="progress-text">40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Activity</h3>
+                        </div>
+                        <div class="activity-feed">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p><strong>Completed</strong> Module 2 Quiz</p>
+                                    <span class="activity-time">2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p><strong>Earned</strong> Quality Auditor Certificate</p>
+                                    <span class="activity-time">1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p><strong>Started</strong> ISO 9001 Course</p>
+                                    <span class="activity-time">3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Upcoming Deadlines</h3>
+                    </div>
+                    <div class="deadlines-list">
+                        <div class="deadline-item">
+                            <div class="deadline-info">
+                                <h4>Quality Management System Assessment</h4>
+                                <p>ISO 9001:2015 Course</p>
+                            </div>
+                            <div class="deadline-date">
+                                <span class="date">Dec 15</span>
+                                <span class="days-left">3 days left</span>
+                            </div>
+                        </div>
+                        <div class="deadline-item">
+                            <div class="deadline-info">
+                                <h4>Final Exam</h4>
+                                <p>Internal Auditing Course</p>
+                            </div>
+                            <div class="deadline-date">
+                                <span class="date">Dec 22</span>
+                                <span class="days-left">10 days left</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses Section -->
+            <section id="courses" class="dashboard-section">
+                <div class="dashboard-header">
+                    <h1>My Courses</h1>
+                    <p>Track your learning progress and continue your courses</p>
+                </div>
+
+                <div class="courses-filter">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="in-progress">In Progress</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                    <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card" data-status="in-progress">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200/2563eb/ffffff?text=ISO+9001" alt="ISO 9001 Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>ISO 9001:2015 Quality Management</h3>
+                            <p>Learn the fundamentals of quality management systems and ISO 9001 requirements.</p>
+                            <div class="course-meta">
+                                <span class="course-duration"><i class="fas fa-clock"></i> 20 hours</span>
+                                <span class="course-modules"><i class="fas fa-book"></i> 8 modules</span>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65% Complete</span>
+                            </div>
+                            <button class="btn btn-primary">Continue Learning</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-status="in-progress">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Internal+Auditing" alt="Internal Auditing Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>Internal Auditing Fundamentals</h3>
+                            <p>Master the skills needed to conduct effective internal audits in your organization.</p>
+                            <div class="course-meta">
+                                <span class="course-duration"><i class="fas fa-clock"></i> 15 hours</span>
+                                <span class="course-modules"><i class="fas fa-book"></i> 6 modules</span>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                                <span class="progress-text">40% Complete</span>
+                            </div>
+                            <button class="btn btn-primary">Continue Learning</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-status="completed">
+                        <div class="course-image">
+                            <img src="https://via.placeholder.com/300x200/f59e0b/ffffff?text=Quality+Auditor" alt="Quality Auditor Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>Quality Auditor Certification</h3>
+                            <p>Comprehensive training for aspiring quality auditors and professionals.</p>
+                            <div class="course-meta">
+                                <span class="course-duration"><i class="fas fa-clock"></i> 25 hours</span>
+                                <span class="course-modules"><i class="fas fa-book"></i> 10 modules</span>
+                            </div>
+                            <div class="course-status completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Completed</span>
+                            </div>
+                            <button class="btn btn-secondary">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="dashboard-section">
+                <div class="dashboard-header">
+                    <h1>My Certifications</h1>
+                    <p>Your earned certificates and professional credentials</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certificate-badge">Verified</div>
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Quality Auditor Certification</h3>
+                            <p>TLC Consult Professional Certification</p>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-calendar"></i> Issued: Nov 15, 2024</span>
+                                <span><i class="fas fa-calendar-check"></i> Valid until: Nov 15, 2026</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <button class="btn btn-primary">Download PDF</button>
+                                <button class="btn btn-secondary">Verify</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="certificate-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="certificate-badge">Verified</div>
+                        </div>
+                        <div class="certificate-content">
+                            <h3>ISO 9001 Foundation</h3>
+                            <p>Quality Management Systems Fundamentals</p>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-calendar"></i> Issued: Oct 28, 2024</span>
+                                <span><i class="fas fa-calendar-check"></i> Valid until: Oct 28, 2025</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <button class="btn btn-primary">Download PDF</button>
+                                <button class="btn btn-secondary">Verify</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profile Section -->
+            <section id="profile" class="dashboard-section">
+                <div class="dashboard-header">
+                    <h1>Profile</h1>
+                    <p>Manage your personal information and preferences</p>
+                </div>
+
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="https://via.placeholder.com/120x120/64748b/ffffff?text=JD" alt="Profile Picture">
+                                <button class="avatar-edit">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </div>
+                            <div class="profile-info">
+                                <h2>John Doe</h2>
+                                <p>Quality Assurance Professional</p>
+                                <span class="member-since">Member since October 2024</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" value="John" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" value="Doe" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" value="john.doe@example.com" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" value="+1 (555) 123-4567" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" value="ABC Manufacturing" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Position</label>
+                                <input type="text" id="position" value="Quality Manager" readonly>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn btn-primary" onclick="toggleEdit()">Edit Profile</button>
+                                <button class="btn btn-secondary" id="saveBtn" style="display: none;" onclick="saveProfile()">Save Changes</button>
+                                <button class="btn btn-outline" id="cancelBtn" style="display: none;" onclick="cancelEdit()">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

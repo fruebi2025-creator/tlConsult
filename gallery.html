@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TLC Consult</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TLC Consult</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services-qa.html">Quality Control & Assurance</a></li>
+                        <li><a href="services-training.html">Training & Education</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="industries.html" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.php" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Gallery</h1>
+                <p>Showcasing our events, certifications, and company milestones</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Gallery</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="certifications">Certifications</button>
+                <button class="filter-btn" data-filter="company">Company</button>
+                <button class="filter-btn" data-filter="training">Training</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Events -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/2563eb/ffffff?text=Quality+Summit+2024" alt="Quality Summit 2024">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Quality Summit 2024</h3>
+                                    <p>Annual quality management conference</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Quality Summit 2024</h4>
+                            <span class="gallery-category">Events</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/2563eb/ffffff?text=ISO+Certification+Ceremony" alt="ISO Certification Ceremony">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>ISO Certification Ceremony</h3>
+                                    <p>Client certification celebration</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>ISO Certification Ceremony</h4>
+                            <span class="gallery-category">Events</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="gallery-item" data-category="certifications">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=ISO+9001+Certificate" alt="ISO 9001 Certificate">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>ISO 9001:2015 Certification</h3>
+                                    <p>Quality Management Systems</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>ISO 9001:2015</h4>
+                            <span class="gallery-category">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="certifications">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=ISO+14001+Certificate" alt="ISO 14001 Certificate">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>ISO 14001:2015 Certification</h3>
+                                    <p>Environmental Management Systems</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>ISO 14001:2015</h4>
+                            <span class="gallery-category">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="gallery-item" data-category="company">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/3b82f6/ffffff?text=TLC+Office" alt="TLC Consult Office">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>TLC Consult Headquarters</h3>
+                                    <p>Our modern office facility</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Our Office</h4>
+                            <span class="gallery-category">Company</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="company">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/3b82f6/ffffff?text=Team+Meeting" alt="Team Meeting">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Team Collaboration</h3>
+                                    <p>Our expert consultants at work</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Team Meeting</h4>
+                            <span class="gallery-category">Company</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training -->
+                <div class="gallery-item" data-category="training">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=Training+Workshop" alt="Training Workshop">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Quality Management Workshop</h3>
+                                    <p>Interactive training session</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>QM Workshop</h4>
+                            <span class="gallery-category">Training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="training">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=Online+Learning" alt="Online Learning Platform">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Online Learning Platform</h3>
+                                    <p>Digital training resources</p>
+                                    <button class="gallery-btn" onclick="openModal(this)">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>E-Learning</h4>
+                            <span class="gallery-category">Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TLC Consult</h4>
+                    <p>Excellence in Quality Control, Assurance & Training. Empowering organizations with comprehensive quality solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-qa.html">Quality Control</a></li>
+                        <li><a href="services-qa.html">Quality Assurance</a></li>
+                        <li><a href="services-training.html">Training Programs</a></li>
+                        <li><a href="services-training.html">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@tlc-consult.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 TLC Consult. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
