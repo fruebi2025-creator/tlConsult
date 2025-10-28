@@ -1,7 +1,7 @@
 <?php
 /**
  * Logout Handler
- * TLC Consult Web Application
+ * TL Consulting Web Application
  */
 
 require_once __DIR__ . '/../includes/Auth.php';

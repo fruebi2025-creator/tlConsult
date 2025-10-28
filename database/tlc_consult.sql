@@ -459,9 +459,9 @@ INSERT INTO user_certificates (user_id, course_id, certificate_number, issued_da
 INSERT INTO site_settings (setting_key, setting_value, setting_type, description) VALUES
 ('site_name', 'TLC Consult', 'text', 'Website name'),
 ('site_description', 'Excellence in Quality Control, Assurance & Training', 'text', 'Website description'),
-('contact_email', 'info@tlc-consult.com', 'text', 'Main contact email'),
-('contact_phone', '+1 (555) 123-4567', 'text', 'Main contact phone'),
-('office_address', '123 Business Ave, Suite 100, City, State 12345', 'text', 'Office address'),
+('contact_email', 'contactus@tlconsultingltd.com', 'text', 'Main contact email'),
+('contact_phone', '+234 809 062 2735', 'text', 'Main contact phone'),
+('office_address', '39A Eric Moore Street, Wemabod Estate, Ajao Road, Off Adeniyi Jones Avenue, Ikeja, LAGOS.', 'text', 'Office address'),
 ('items_per_page', '12', 'number', 'Items to display per page'),
 ('maintenance_mode', '0', 'boolean', 'Site maintenance mode');
 

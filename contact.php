@@ -194,7 +194,7 @@ function sendContactNotification($data) {
     // Implement email sending logic here
     // You can use PHPMailer, SwiftMailer, or built-in mail() function
     
-    $to = 'info@tlc-consult.com';
+    $to = 'contactus@tlconsultingltd.com';
     $subject = 'New Contact Form Submission - ' . $data['subject'];
     
     $body = "
@@ -232,13 +232,13 @@ function sendAutoReply($email, $name) {
     
     Thank you for contacting TLC Consult. We have received your message and will respond within 24 hours.
     
-    If you have an urgent inquiry, please call us at +1 (555) 123-4567.
+    If you have an urgent inquiry, please call us at +234 809 062 2735.
     
     Best regards,
     TLC Consult Team
     ";
     
-    $headers = "From: info@tlc-consult.com\r\n";
+    $headers = "From: contactus@tlconsultingltd.com\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
     // mail($email, $subject, $body, $headers);

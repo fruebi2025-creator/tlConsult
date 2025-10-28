@@ -1,7 +1,7 @@
 <?php
 /**
  * User Dashboard
- * TLC Consult Web Application
+ * TL Consulting Web Application
  */
 
 require_once __DIR__ . '/includes/Auth.php';
@@ -34,7 +34,9 @@ $stats['total_hours'] = round($stats['total_time_minutes'] / 60, 1);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - TLC Consult</title>
+    <title>Dashboard - TL Consulting</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -44,7 +46,7 @@ $stats['total_hours'] = round($stats['total_time_minutes'] / 60, 1);
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>TLC Consult</h2>
+                <h2>TL Consulting</h2>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">

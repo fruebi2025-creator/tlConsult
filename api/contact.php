@@ -232,7 +232,7 @@ function sendAutoReply($email, $name) {
     
     Thank you for contacting TLC Consult. We have received your message and will respond within 24 hours.
     
-    If you have an urgent inquiry, please call us at +1 (555) 123-4567.
+    If you have an urgent inquiry, please call us at +234 809 062 2735.
     
     Best regards,
     TLC Consult Team

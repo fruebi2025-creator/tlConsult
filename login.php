@@ -28,7 +28,9 @@ if (isset($_GET['logout']) && $_GET['logout'] == '1') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - TLC Consult</title>
+    <title>Login - TL Consulting</title>
+    <link rel="icon" type="image/svg+xml" href="images/TLC.png">
+    <link rel="alternate icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,7 +40,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == '1') {
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>TLC Consult</h2>
+                <h2>TL Consulting</h2>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -166,7 +168,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == '1') {
                 <div class="auth-info">
                     <div class="info-content">
                         <h2>Access Your Learning Dashboard</h2>
-                        <p>Sign in to your TLC Consult account to:</p>
+                        <p>Sign in to your TL Consulting account to:</p>
                         <ul class="feature-list">
                             <li><i class="fas fa-check"></i> Access your enrolled courses</li>
                             <li><i class="fas fa-check"></i> Download certificates and materials</li>
@@ -199,7 +201,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == '1') {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>TLC Consult</h3>
+                    <h3>TL Consulting</h3>
                     <p>Excellence in Quality Control, Assurance & Training Services</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -229,15 +231,15 @@ if (isset($_GET['logout']) && $_GET['logout'] == '1') {
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> info@tlc-consult.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>City, State 12345</p>
+                        <p><i class="fas fa-phone"></i> +234 809 062 2735</p>
+                        <p><i class="fas fa-envelope"></i> contactus@tlconsultingltd.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>39A Eric Moore Street,Wemabod Estate Ajao<br>Road, Off Adeniyi Jones<br> Avenue,Ikeja, LAGOS</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2024 TLC Consult. All rights reserved.</p>
+                    <p>&copy; 2024 TL Consulting. All rights reserved.</p>
                     <div class="footer-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>

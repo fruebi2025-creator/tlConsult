@@ -93,6 +93,17 @@ body {
     height: 70px;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-logo .logo-img {
+    height: 40px;
+    width: auto;
+}
+
 .nav-logo h2 {
     color: var(--primary-blue);
     font-weight: 700;

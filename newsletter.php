@@ -1,7 +1,7 @@
 <?php
 /**
  * Newsletter Subscription Handler
- * TLC Consult Web Application
+ * TL Consulting Web Application
  */
 
 require_once __DIR__ . '/../includes/Database.php';
@@ -182,12 +182,12 @@ try {
  * Send welcome email (placeholder function)
  */
 function sendWelcomeEmail($email, $name, $verification_token) {
-    $subject = 'Welcome to TLC Consult Newsletter';
+    $subject = 'Welcome to TL Consulting Newsletter';
     
     $body = "
     Dear " . ($name ?: 'Subscriber') . ",
     
-    Thank you for subscribing to the TLC Consult newsletter!
+    Thank you for subscribing to the TL Consulting newsletter!
     
     You'll receive:
     - Weekly quality insights
@@ -198,13 +198,13 @@ function sendWelcomeEmail($email, $name, $verification_token) {
     If you didn't subscribe to this newsletter, you can unsubscribe at any time using the link below.
     
     Best regards,
-    TLC Consult Team
+    TL Consulting Team
     
     ---
     Unsubscribe: " . APP_URL . "/unsubscribe.php?token=" . $verification_token . "
     ";
     
-    $headers = "From: info@tlc-consult.com\r\n";
+    $headers = "From: contactus@tlconsultingltd.com\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
     // mail($email, $subject, $body, $headers);
