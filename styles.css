@@ -180,6 +180,7 @@ body {
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
+    z-index: 1;
     transform: translateY(0);
 }
 
