@@ -774,7 +774,7 @@ section {
 
 /* Page Hero */
 .page-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/group-meeting.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("images/group-meeting.jpg");
     background-size: cover;
     color: var(--white);
     padding: 120px 0 80px;
