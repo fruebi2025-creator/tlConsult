@@ -1,7 +1,7 @@
 <?php
 /**
  * Registration API Handler
- * TL Consulting Web Application
+ * TLC Consult Web Application
  */
 
 require_once __DIR__ . '/../includes/Auth.php';

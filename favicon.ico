@@ -1,0 +1,31 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradientFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5D76E;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F1C40F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield Shape -->
+  <path d="M16 2 L25 7 Q28 8 28 12 L28 20 Q28 26 25 28 L16 30 L7 28 Q4 26 4 20 L4 12 Q4 8 7 7 Z" 
+        fill="url(#goldGradientFav)" stroke="#D4AF37" stroke-width="0.5"/>
+  
+  <!-- White Background -->
+  <path d="M16 4 L23 8 Q26 9 26 12 L26 19 Q26 24 23 26 L16 28 L9 26 Q6 24 6 19 L6 12 Q6 9 9 8 Z" 
+        fill="white"/>
+  
+  <!-- TLC Text -->
+  <g fill="url(#goldGradientFav)">
+    <!-- T -->
+    <rect x="10" y="13" width="6" height="1.5"/>
+    <rect x="12.5" y="13" width="1.5" height="8"/>
+    
+    <!-- L -->
+    <rect x="15.5" y="13" width="1.5" height="8"/>
+    <rect x="15.5" y="19.5" width="4" height="1.5"/>
+    
+    <!-- C -->
+    <path d="M21 13 Q23 13 23.5 15.5 L22.5 15.5 Q22.2 14.5 21 14.5 Q20.5 14.5 20.5 15.5 L20.5 18.5 Q20.5 19.5 21 19.5 Q22.2 19.5 22.5 18.5 L23.5 18.5 Q23 21 21 21 Q20 21 19.5 20 L19.5 16 Q19.5 13 21 13 Z"/>
+  </g>
+</svg>
