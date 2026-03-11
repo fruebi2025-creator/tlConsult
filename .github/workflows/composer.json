@@ -1,27 +1,11 @@
 {
-    "name": "tlc-consult/tlc-consulting",
-    "description": "TLC Consulting Website - Quality Management and Training Services",
+    "name": "ebiowei/tl-consult",
+    "description": "tl-consultltd.com",
     "type": "project",
-    "license": "proprietary",
     "require": {
-        "php": ">=7.4"
+        "php": "^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "TLC\\": "includes/"
-        }
-    },
-    "config": {
-        "platform": {
-            "php": "7.4"
-        },
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+        "php": "^8.0"
+    }
 }
