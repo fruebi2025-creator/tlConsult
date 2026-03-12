@@ -6,9 +6,9 @@
 
 // Database configuration constants
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'tlc_consult');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_NAME', 'tlcoljhk_tlc_consult');
+define('DB_USER', 'tlcoljhk_user');
+define('DB_PASS', 'ILBy=ke2a3B~');
 define('DB_CHARSET', 'utf8mb4');
 
 // Application configuration
@@ -27,7 +27,7 @@ define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_PORT', 587);
 define('SMTP_USERNAME', 'your-email@gmail.com');
 define('SMTP_PASSWORD', 'your-app-password');
-define('FROM_EMAIL', 'noreply@tlc-consult.com');
+define('FROM_EMAIL', 'fruebiadisinde2017@gmail.com');
 define('FROM_NAME', 'TLC Consult');
 
 // File upload settings
@@ -50,4 +50,5 @@ if (DEBUG_MODE) {
 
 // Set timezone
 date_default_timezone_set('UTC');
+
 ?>
