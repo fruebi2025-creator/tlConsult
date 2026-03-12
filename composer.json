@@ -8,10 +8,9 @@
         "ext-pdo": "*",
         "ext-mysqli": "*",
         "ext-json": "*",
-        "ext-mbstring": "*"
-    },
-    "require-dev": {
-        "php": "^8.0"
+        "ext-mbstring": "*",
+        "ext-session": "*",
+        "composer": "^2.9"
     },
     "autoload": {
         "psr-4": {
