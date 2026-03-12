@@ -4,9 +4,9 @@
 -- =====================================================
 
 SET FOREIGN_KEY_CHECKS = 0;
-DROP DATABASE IF EXISTS tlc_consult;
-CREATE DATABASE tlc_consult CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE tlc_consult;
+DROP DATABASE IF EXISTS tlcoljhk_tlc_consult;
+CREATE DATABASE tlcoljhk_tlc_consult CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE tlcoljhk_tlc_consult;
 
 -- =====================================================
 -- Users and Authentication Tables
@@ -529,5 +529,6 @@ SELECT
 FROM resources r
 LEFT JOIN resource_categories rc ON r.category_id = rc.id
 LEFT JOIN users u ON r.author_id = u.id;
+
 
 COMMIT;
